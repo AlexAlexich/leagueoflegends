@@ -14,10 +14,28 @@ window.onload = function() {
         z.innerHTML = x
         list.appendChild(y)
     }
+    var bzzz = document.createElement("li")
+    bzzz.setAttribute("id", "hamburger")
+    var kjk = document.createElement("i")
+    kjk.setAttribute("class", "fa fa-bars")
+    bzzz.appendChild(kjk)
+    list.appendChild(bzzz)
+
+    //
+    var list22 = this.document.querySelector('#hamburgerMeni')
+    for (var i = 0; i < sub.length; i++) {
+        x = sub[i]
+        var y = document.createElement("li")
+        var z = document.createElement("a")
+        y.appendChild(z)
+        z.setAttribute("href", `${list1[i]}`)
+        z.innerHTML = x
+        list22.appendChild(y)
+    }
     //Ispis navigaccije
     var list2 = document.getElementById("navigacija")
-    var sub2 = ["About game", "Tournemnts", "About me", "Login", "Navigacija"]
-    var lista2 = ["index.html", "tournaments.html", "about.html", "login.html", "navigacija.pdf"]
+    var sub2 = ["About game", "Tournemnts", "About me", "Login", "Dokumentacija"]
+    var lista2 = ["index.html", "tournaments.html", "about.html", "login.html", "Dokumentacija.pdf"]
     for (var i = 0; i < sub2.length; i++) {
         x = sub2[i]
         var y = document.createElement("li")
@@ -34,32 +52,14 @@ window.onload = function() {
     m.setAttribute('alt', "LCK Turnir")
     m.setAttribute('class', 'turnir show')
     prvi.appendChild(m)
-        /*  var prviSlajder = ["assets/images/lcs2.jpg", "assets/images/lcs3.jpg"]
-          var sliderAlt = "LCS Turnir"
-          for (var i = 0; i < prviSlajder.length; i++) {
-              var slika = document.createElement("img")
-              slika.setAttribute("src", `${prviSlajder[i]}`)
-              slika.setAttribute("alt", sliderAlt)
-              slika.setAttribute("class", 'turnir')
-              prvi.appendChild(slika)
 
-          }*/
     var drugi = document.getElementById("slikaDruga")
     var n = document.createElement("img")
     n.setAttribute('src', "assets/images/lec.jpg")
     n.setAttribute('alt', "LCK Turnir")
     n.setAttribute('class', 'turnir show')
     drugi.appendChild(n)
-        /*  var drugiSlajder = ["assets/images/lec2.jpg", "assets/images/lec3.jpg"]
-          var sliderAlt2 = "LEC Turnir"
-          for (var i = 0; i < drugiSlajder.length; i++) {
-              var slika = document.createElement("img")
-              slika.setAttribute("src", `${drugiSlajder[i]}`)
-              slika.setAttribute("alt", sliderAlt2)
-              slika.setAttribute("class", 'turnir')
-              drugi.appendChild(slika)
 
-          }*/
 
     var treci = document.getElementById("slikaTreca")
     var z = document.createElement("img")
@@ -67,33 +67,15 @@ window.onload = function() {
     z.setAttribute('alt', "LCK Turnir")
     z.setAttribute('class', 'turnir show')
     treci.appendChild(z)
-        /* var treciSlajder = ["assets/images/lck2.jpg", "assets/images/lck3.jpg"]
-         var sliderAlt3 = "LCK Turnir"
-         for (var i = 0; i < treciSlajder.length; i++) {
-             var slika = document.createElement("img")
-             slika.setAttribute("src", `${treciSlajder[i]}`)
-             slika.setAttribute("alt", sliderAlt3)
-             slika.setAttribute("class", 'turnir')
-             treci.appendChild(slika)
 
-         }*/
     var cetvrti = document.getElementById("slika4")
     var s = document.createElement("img")
     s.setAttribute('src', "assets/images/lpl.jpg")
     s.setAttribute('alt', "LPL Turnir")
     s.setAttribute('class', 'turnir show')
     cetvrti.appendChild(s)
-        /*var cetvrtiSlajder = ["assets/images/lpl2.jpg", "assets/images/lpl3.jpg"]
-        var sliderAlt4 = "LPL Turnir"
-        for (var i = 0; i < cetvrtiSlajder.length; i++) {
-            var slika = document.createElement("img")
-            slika.setAttribute("src", `${cetvrtiSlajder[i]}`)
-            slika.setAttribute("alt", sliderAlt4)
-            slika.setAttribute('class', 'turnir')
-            cetvrti.appendChild(slika)
 
-        }*/
-        //ispisivanje texta
+    //ispisivanje texta
     var xz = document.getElementById("PrviP")
     xz.innerHTML = "Formerly known as the NA LCS, the LCS is the first competition most English fans tune in to. Now, technically, it is not a tournament. It is a league. That said, leagues play a huge role in the world of League of Legends esports, so it'd be a mistake to dismiss them. The LCS acronym itself stands for the \"League of Legends Championship Series\", and the league itself is the premier LoL esports competition in North America that takes place in Los Angeles, USA."
     var xzz = document.querySelector(".drugiP")
@@ -157,4 +139,33 @@ window.onload = function() {
             $(this).setAttribute('class', '');
         }
     });
+    $("#meni li a").hover(rast, smanjenje)
+
+    $("#hamburger").click(function() {
+            if ($("#hamburgerLista").visible()) {
+                $("#hamburgerLista").css("display", "none")
+            } else { $("#hamburgerLista").css("display", "block") }
+
+        }
+
+    )
+}
+
+function rast() {
+
+    $(this).animate({
+        fontSize: "+=7px",
+        paddingLeft: '+=15px'
+    }, 200);
+
+    $(this).stop(true, true);
+}
+
+function smanjenje() {
+    $(this).animate({
+        fontSize: "-=7px",
+        paddingLeft: '-=15px'
+    }, 200)
+
+    $(this).stop(true, true)
 }

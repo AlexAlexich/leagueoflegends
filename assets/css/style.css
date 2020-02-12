@@ -367,3 +367,21 @@ footer p {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+#hamburger {
+    display: none;
+    width: 40px;
+    color: white;
+    margin-left: 100px;
+}
+
+#hamburgerLista {
+    background-color: black;
+    text-align: center;
+    display: none;
+}
+
+#hamburgerLista #hamburgerMeni li a {
+    color: white;
+    text-decoration: none;
+}

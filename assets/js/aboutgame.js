@@ -11,10 +11,27 @@ window.onload = function() { //ispis menija
         z.innerHTML = x
         list.appendChild(y)
     }
+    var bzzz = document.createElement("li")
+    bzzz.setAttribute("id", "hamburger")
+    var kjk = document.createElement("i")
+    kjk.setAttribute("class", "fa fa-bars")
+    bzzz.appendChild(kjk)
+    list.appendChild(bzzz)
+        //
+    var list22 = this.document.querySelector('#hamburgerLista ul')
+    for (var i = 0; i < sub.length; i++) {
+        x = sub[i]
+        var y = document.createElement("li")
+        var z = document.createElement("a")
+        y.appendChild(z)
+        z.setAttribute("href", `${list1[i]}`)
+        z.innerHTML = x
+        list22.appendChild(y)
+    }
     //Ispis navigaccije
     var list2 = document.getElementById("navigacija")
-    var sub2 = ["About game", "Tournemnts", "About me", "Login", "Navigacija"]
-    var lista2 = ["index.html", "tournaments.html", "about.html", "login.html", "navigacija.pdf"]
+    var sub2 = ["About game", "Tournemnts", "About me", "Login", "Dokumentacija"]
+    var lista2 = ["index.html", "tournaments.html", "about.html", "login.html", "Dokumentacija.pdf"]
     for (var i = 0; i < sub2.length; i++) {
         x = sub2[i]
         var y = document.createElement("li")
@@ -64,6 +81,25 @@ window.onload = function() { //ispis menija
     var z3 = document.createElement("p")
     z3.innerHTML = "League of Legends has an active and widespread competitive scene, which is commonly described as the preeminent global eSport and a major factor towards the industry's legitimization. In North America and Europe, Riot Games organizes the League Championship Series (LCS), located in Los Angeles and the League of Legends European Championship (LEC), located in Berlin, respectively, each of which consist of 10 professional teams. Similar regional competitions exist in China (LPL), South Korea (LCK), and various other regions. These regional competitions culminate with the annual World Championship. The 2019 League of Legends World Championship had over 100 million unique viewers, peaking at a concurrent viewership of 44 million, with a minimum prize pool of US$2.5 million that featured a collaboration between Riot Games and Louis Vuitton. The 2018 Mid-Season Invitational had an overall peak concurrent viewership of 19.8 million, while the finals had an average concurrent viewership of 11 million. League of Legends is the world's most watched eSport, with total and peak viewerships that not only outdistance direct competitors such as Dota 2 and Fortnite, but other traditional sports events such as the Super Bowl."
     z.appendChild(z3)
+    $("#meni li a").hover(rast, smanjenje)
 
+}
 
+function rast() {
+
+    $(this).animate({
+        fontSize: "+=7px",
+        paddingLeft: '+=15px'
+    }, 200);
+
+    $(this).stop(true, true);
+}
+
+function smanjenje() {
+    $(this).animate({
+        fontSize: "-=7px",
+        paddingLeft: '-=15px'
+    }, 200)
+
+    $(this).stop(true, true)
 }
