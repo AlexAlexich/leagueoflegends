@@ -220,6 +220,14 @@ footer p {
     padding-top: 15px;
 }
 
+.background {
+    background-image: url("../images/bg.jpg");
+}
+
+.turnirPrvi {
+    background-image: url("../images/bg.jpg");
+}
+
 #slikaPrva,
 #slikaDruga,
 #slikaTreca,
