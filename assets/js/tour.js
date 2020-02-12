@@ -142,13 +142,17 @@ window.onload = function() {
     $("#meni li a").hover(rast, smanjenje)
 
     $("#hamburger").click(function() {
-            if ($("#hamburgerLista").visible()) {
+            let vidljiv = $("#hamburgerLista").is(":visible");
+            if (vidljiv) {
                 $("#hamburgerLista").css("display", "none")
-            } else { $("#hamburgerLista").css("display", "block") }
+            } else {
+                $("#hamburgerLista").css("display", "block")
+            }
 
         }
 
     )
+
 }
 
 function rast() {
