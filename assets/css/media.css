@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1200px) {
+    .smanjivanje {
+        width: 28%;
+    }
+}
+
+
+/*@media only screen and (max-width: 1075) {
+    /*meni\*/
+
+@media only screen and (max-width: 980px) {
+    .videoDesno {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    /*slika iznad texta u index i sign in i login*/
+    .desno1 {
+        width: 100%;
+    }
+    .smanjivanje {
+        width: 40%;
+    }
+    .slicica1 {
+        margin: 0px auto;
+    }
+    .middle {
+        display: block;
+        width: 100%;
+    }
+    /* login sign in*/
+    #registracija {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #login {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    /*povecavanje submit dugmeta*/
+    #buttonProvera {
+        width: 30%;
+    }
+    #slikaPrva,
+    #slikaDruga,
+    #slikaTreca,
+    #slika4 {
+        width: 100%;
+        text-align: center;
+    }
+    #slikaPrva img,
+    #slikaDruga img,
+    #slikaTreca img,
+    #slika4 img {
+        margin: 0px auto;
+    }
+    .desno,
+    .levo {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    /*futer jedno ispod drugog i turniri*/
+    footer {
+        display: block;
+    }
+    #dolePrvo {
+        flex-direction: column;
+        text-align: center;
+    }
+    #navigacija,
+    #slikaDole,
+    #dole,
+    #social {
+        width: 100%;
+    }
+    #social a {
+        float: left;
+    }
+    iframe {
+        width: 330px;
+        height: 155px;
+    }
+}

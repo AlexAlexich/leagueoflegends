@@ -1,0 +1,369 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    list-style-type: none;
+}
+
+.cleaner {
+    clear: both;
+}
+
+#fullHead {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+.okvir {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #slika {
+    width: 30%;
+}
+
+header #slika img {
+    width: 50%;
+    margin-top: 15px;
+}
+
+#divMeni {
+    width: 60%;
+}
+
+#divMeni ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#divMeni ul li {
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 45px;
+}
+
+#divMeni ul li:last-child {
+    margin-right: 0px;
+}
+
+#slider {
+    width: 100%;
+}
+
+#slider img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+#showHide1,
+#showHide2,
+#showHide3,
+#showHide4 {
+    display: none;
+}
+
+.greskaIme,
+.greskaPrezime,
+.greskaUsername,
+.greskaEmail,
+.greskaPass,
+#polGreska,
+.greskaPassSignIn,
+.greskaUsernameSingIn {
+    font-size: 25px;
+}
+
+form label {
+    font-size: 30px;
+    color: black;
+}
+
+.form {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    background-color: rgba(248, 248, 248, 0.9);
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+#signupButton,
+#singinButton,
+#buttonProvera {
+    width: 30%;
+    height: 30px;
+    font-size: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    background-color: rgba(248, 248, 248, 0.9);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    float: right;
+}
+
+#buttonProvera {
+    width: 10%;
+    height: 50px;
+}
+
+#registracija {
+    width: 40%;
+    float: left;
+}
+
+#login {
+    width: 40%;
+    float: right;
+}
+
+footer {
+    background-color: black;
+    min-height: 300px;
+    color: white;
+    padding: 20px;
+}
+
+#navigacija {
+    font-size: 30px;
+}
+
+#navigacija ul li {
+    margin-top: 50px;
+}
+
+footer p {
+    width: 20%;
+    margin: 0px auto;
+}
+
+#dolePrvo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#dole,
+#social {
+    width: 100%;
+    font-size: 18px;
+}
+
+#social a {
+    margin-left: 10px;
+    float: right;
+}
+
+#social i {
+    color: white;
+    font-size: 30px;
+}
+
+#meni li a,
+#navigacija li a {
+    color: white;
+    text-decoration: none;
+}
+
+#scrollTop {
+    background: white;
+    padding: 20px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+#textAboutSpolja,
+#slikaAbout,
+#mmessageAbout {
+    width: 100%;
+}
+
+#slikaAbout {
+    text-align: center;
+}
+
+#textAbout {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+#textAbout {
+    text-align: center;
+}
+
+#userMessage {
+    height: 100px;
+}
+
+.turnirPrvi,
+.turnirDrugi {
+    width: 100%;
+    min-height: 300px;
+    padding-top: 15px;
+}
+
+#slikaPrva,
+#slikaDruga,
+#slikaTreca,
+#slika4 {
+    width: 30%;
+}
+
+#slikaPrva img,
+#slikaDruga img,
+#slikaTreca img,
+#slika4 img {
+    border-radius: 3%;
+}
+
+.turnirDrugi {
+    background-color: black;
+    color: rgb(245, 238, 238);
+}
+
+.turnir {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.desno {
+    width: 50%;
+    float: right;
+}
+
+.levo {
+    width: 50%;
+    float: left;
+}
+
+#slikaPrva,
+#slikaTreca,
+.videoLevo {
+    float: left;
+}
+
+#slikaDruga,
+#slika4,
+.videoDesno {
+    float: right;
+}
+
+#gallery {
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#galleryFlex {
+    width: 100%;
+    min-height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#galleryFlex figure {
+    width: 29%;
+    background-color: #fff;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#galleryFlex figure img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.title {
+    width: 100%;
+    min-height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.title h1 {
+    margin: 10px auto;
+    font-size: 50px;
+}
+
+.desno1 {
+    width: 65%;
+    float: right;
+}
+
+.slicica1 {
+    border-radius: 3%;
+    margin-bottom: 15px;
+}
+
+#atag {
+    text-decoration: none;
+    color: white;
+}
+
+.htagovi {
+    margin-bottom: 15px;
+}
+
+#naslovVideo {
+    margin-top: 15px;
+}
+
+.videoDesno,
+.videoLevo {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+#naslov {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#autorSlika {
+    border-radius: 4%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}

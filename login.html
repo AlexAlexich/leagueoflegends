@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Aleksandar Aleksic" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>League of Legends - MOBA Game</title>
+    <link href="Images/icon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/media.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="fullHead">
+        <div class="okvir">
+            <header>
+
+                <div id="slika">
+                    <a href="index.html"><img src="assets/images/logo.jpg" alt="logo"> </a>
+                </div>
+                <div id="divMeni">
+                    <ul id="meni"></ul>
+                </div>
+
+            </header>
+        </div>
+    </div>
+    <div id="slider">
+        <img src="assets/images/slider.jpg" alt="slider">
+    </div>
+    <div>
+        <div class="okvir">
+            <div id="registracija">
+                <form action="#" method="GET">
+                    <table>
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td><input type="text" class="userName form" id="userName1" name="userName" placeholder="Name..." required /></td>
+                            <p class="greskaIme hide"> </p>
+                        </tr>
+                        <tr>
+                            <td> <label>Surname</label></td>
+                            <td><input type="text" class="userSurname form" name="userSurname" id="userSurname" placeholder="Surname..." required /></td>
+                            <p class="greskaPrezime hide"> </p>
+                        </tr>
+                        <tr>
+                            <td> <label>Username</label></td>
+                            <td> <input type="text" id="userUserName" name="userUserName" placeholder="Username..." class="form" required /></td>
+                            <p class="greskaUsername hide" id="sifra1"> </p>
+                        </tr>
+                        <tr>
+                            <td> <label>Email</label></td>
+                            <td><input type="email" id="userEmail" name="userEmail" placeholder="Email..." class="form" required /></td>
+                            <p class="greskaEmail hide"> </p>
+                        </tr>
+                        <tr>
+                            <td> <label>Password</label></td>
+                            <td><input type="password" class="userPass form" id="sifra" name="userPass" placeholder="Password..." class="form" required/> </td>
+                            <p class="greskaPass hide"></p>
+                        </tr>
+                    </table>
+                    <div>
+                        <label> 
+                            <span> Male </span> 
+                            <input type="radio" name="gender" value="male"   >    
+                        </label>
+                        <label> 
+                            <span>Female </span> 
+                            <input type="radio" name="gender" value="female"  >
+                        </label>
+                        <label> 
+                            <span>Other </span> 
+                            <input type="radio" name="gender" value="other" >
+                        </label>
+                        <p id="polGreska" class="hide"></p>
+                    </div>
+                    <input type="button" id="signupButton" name="tbSend" value="Sing up" />
+                    <div class="cleaner"></div>
+
+                </form>
+            </div>
+            <div id="login">
+                <form>
+                    <table>
+                        <tr>
+                            <td> <label>Username</label></td>
+                            <td> <input type="text" id="userUserName" name="userUserName" placeholder="Username..." class="form" required /></td>
+                            <p class="greskaUsernameSingIn" class="hide"> </p>
+                        </tr>
+                        <tr>
+                            <td> <label>Password</label></td>
+                            <td><input type="password" class="userPass form" name="userPassLogin" placeholder="Password..." class="form" required/> </td>
+                            <p class="greskaPassSignIn hide"></p>
+                        </tr>
+                    </table>
+                    <input type="button" id="singinButton" name="tbSend" value="Sign in" />
+
+                </form>
+            </div>
+            <div class="cleaner"></div>
+
+        </div>
+
+
+    </div>
+    <footer>
+        <div class="okvir">
+            <div id="dolePrvo">
+
+
+                <div id="navigacija">
+                    <ul></ul>
+
+                </div>
+
+                <div id="slikaDole">
+                    <a href="index.html"><img src="assets/images/slikadole.jpg" alt="logo"> </a>
+                </div>
+            </div>
+            <div id="dole">
+                <p>&copy; All rights reserved.</p>
+            </div>
+            <div id="social">
+
+                <a href="https://www.instagram.com/_cile_99/" target="_blank">
+                    <i class="fab	 fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/cile999" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="sitemap.xml" target="_blank">
+                    <i class="fa fa-sitemap"></i>
+                </a>
+                <div class="cleaner"></div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div id='scrollTop'><i class="fas fa-arrow-up"></i></div>
+
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/regular.js"></script>
+
+
+    <script src="assets/js/jquery.js"></script>
+</body>
+
+</html>
