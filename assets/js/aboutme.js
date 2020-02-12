@@ -53,7 +53,16 @@ window.onload = function() {
 
     document.querySelector("#buttonProvera").addEventListener("click", provera3)
     $("#meni li a").hover(rast, smanjenje)
+    $("#hamburger").click(function() {
+            let vidljiv = $("#hamburgerLista").is(":visible");
+            if (vidljiv) {
+                $("#hamburgerLista").css("display", "none")
+            } else {
+                $("#hamburgerLista").css("display", "block")
+            }
+        }
 
+    )
 }
 
 function rast() {

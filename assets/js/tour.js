@@ -148,11 +148,9 @@ window.onload = function() {
             } else {
                 $("#hamburgerLista").css("display", "block")
             }
-
         }
 
     )
-
 }
 
 function rast() {

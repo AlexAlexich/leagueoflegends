@@ -82,7 +82,16 @@ window.onload = function() { //ispis menija
     z3.innerHTML = "League of Legends has an active and widespread competitive scene, which is commonly described as the preeminent global eSport and a major factor towards the industry's legitimization. In North America and Europe, Riot Games organizes the League Championship Series (LCS), located in Los Angeles and the League of Legends European Championship (LEC), located in Berlin, respectively, each of which consist of 10 professional teams. Similar regional competitions exist in China (LPL), South Korea (LCK), and various other regions. These regional competitions culminate with the annual World Championship. The 2019 League of Legends World Championship had over 100 million unique viewers, peaking at a concurrent viewership of 44 million, with a minimum prize pool of US$2.5 million that featured a collaboration between Riot Games and Louis Vuitton. The 2018 Mid-Season Invitational had an overall peak concurrent viewership of 19.8 million, while the finals had an average concurrent viewership of 11 million. League of Legends is the world's most watched eSport, with total and peak viewerships that not only outdistance direct competitors such as Dota 2 and Fortnite, but other traditional sports events such as the Super Bowl."
     z.appendChild(z3)
     $("#meni li a").hover(rast, smanjenje)
+    $("#hamburger").click(function() {
+            let vidljiv = $("#hamburgerLista").is(":visible");
+            if (vidljiv) {
+                $("#hamburgerLista").css("display", "none")
+            } else {
+                $("#hamburgerLista").css("display", "block")
+            }
+        }
 
+    )
 }
 
 function rast() {
