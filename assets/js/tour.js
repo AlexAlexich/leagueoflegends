@@ -16,15 +16,18 @@ window.onload = function() {
     }
     //Ispis navigaccije
     var list2 = document.getElementById("navigacija")
-    for (var i = 0; i < sub.length; i++) {
-        x = sub[i]
+    var sub2 = ["About game", "Tournemnts", "About me", "Login", "Navigacija"]
+    var lista2 = ["index.html", "tournaments.html", "about.html", "login.html", "navigacija.pdf"]
+    for (var i = 0; i < sub2.length; i++) {
+        x = sub2[i]
         var y = document.createElement("li")
         var z = document.createElement("a")
         y.appendChild(z)
         z.innerHTML = x
-        z.setAttribute("href", `${list1[i]}`)
+        z.setAttribute("href", `${lista2[i]}`)
         list2.appendChild(y)
-    } //dodavanje slika u turnire
+    }
+    //dodavanje slika u turnire
     var prvi = document.getElementById("slikaPrva")
     var m = document.createElement("img")
     m.setAttribute('src', "assets/images/lcs.jpg")
