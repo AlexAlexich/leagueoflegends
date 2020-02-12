@@ -151,6 +151,7 @@ window.onload = function() {
         }
 
     )
+    $(".project img").hover(promeneSlika, vracanjeSlika)
 }
 
 function rast() {
@@ -170,4 +171,23 @@ function smanjenje() {
     }, 200)
 
     $(this).stop(true, true)
+}
+
+function promeneSlika() {
+    $(this).animate({
+        fontSize: "+=10px",
+        padding: '+=20px',
+    }, 200);
+    $(this).addClass('border')
+    $(this).stop(true, true);
+}
+
+function vracanjeSlika() {
+    $(this).animate({
+        fontSize: "-=10px",
+        padding: '-=20px',
+
+    }, 200);
+    $(this).removeClass('border')
+    $(this).stop(true, true);
 }
