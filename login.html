@@ -33,9 +33,9 @@
     <div id="hamburgerLista">
         <ul id="hamburgerMeni"></ul>
     </div>
-    <div id="slider">
+    <!-- <div id="slider">
         <img src="assets/images/slider.jpg" alt="slider">
-    </div>
+    </div> -->
     <div class="background">
         <div class="okvir">
             <div id="registracija">
@@ -44,28 +44,34 @@
                         <tr>
                             <td><label>Name</label></td>
                             <td><input type="text" class="userName form" id="userName1" name="userName" placeholder="Name..." required /></td>
-                            <p class="greskaIme hide"> </p>
                         </tr>
+                        <tr><td><p class="greskaIme hide"> </p></td></tr>
+
                         <tr>
                             <td> <label>Surname</label></td>
                             <td><input type="text" class="userSurname form" name="userSurname" id="userSurname" placeholder="Surname..." required /></td>
-                            <p class="greskaPrezime hide"> </p>
                         </tr>
+                        <tr><td><p class="greskaPrezime hide"> </p></td></tr>
+
                         <tr>
                             <td> <label>Username</label></td>
                             <td> <input type="text" id="userUserName" name="userUserName" placeholder="Username..." class="form" required /></td>
-                            <p class="greskaUsername hide" id="sifra1"> </p>
                         </tr>
+                        <tr><td><p class="greskaUsername hide"> </p></td></tr>
+
                         <tr>
                             <td> <label>Email</label></td>
                             <td><input type="email" id="userEmail" name="userEmail" placeholder="Email..." class="form" required /></td>
-                            <p class="greskaEmail hide"> </p>
                         </tr>
+                        <tr><td><p class="greskaEmail hide"> </p></td></tr>
+
                         <tr>
                             <td> <label>Password</label></td>
                             <td><input type="password" class="userPass form" id="sifra" name="userPass" placeholder="Password..." class="form" required/> </td>
-                            <p class="greskaPass hide"></p>
+                            
                         </tr>
+                        <tr><td><p class="greskaPass hide"> </p></td></tr>
+
                     </table>
                     <div>
                         <label> 
@@ -92,14 +98,18 @@
                     <table>
                         <tr>
                             <td> <label>Username</label></td>
-                            <td> <input type="text" id="userUserName" name="userUserName" placeholder="Username..." class="form" required /></td>
-                            <p class="greskaUsernameSingIn" class="hide"> </p>
+                            <td> <input type="text" id="userUserName1" name="userUserName" placeholder="Username..." class="form" required /></td>
                         </tr>
+                        <tr><td>                           <!-- <p class="greskaUsernameSingIn" class="hide"> </p>-->
+                            <p class="greskaUsernameSingIn hide" > </p>
+                        </td></tr>
                         <tr>
                             <td> <label>Password</label></td>
-                            <td><input type="password" class="userPass form" name="userPassLogin" placeholder="Password..." class="form" required/> </td>
-                            <p class="greskaPassSignIn hide"></p>
+                            <td><input type="password" class="userPass userPassLogin form" name="userPassLogin" placeholder="Password..." class="form" required/> </td>
                         </tr>
+                        <tr><td>                         <!--    <p class="greskaPassSignIn hide"></p>-->
+                            <p class="greskaPassSignIn hide"></p>
+                        </td></tr>
                     </table>
                     <input type="button" id="singinButton" name="tbSend" value="Sign in" />
 
@@ -150,6 +160,7 @@
 
     <script src="assets/js/jquery-3.4.1.min.js" type=" text/javaScript"></script>
     <script src="assets/js/regular.js" type=" text/javaScript"></script>
+    <script src="assets/js/meni.js" type="text/javaScript"></script>
     <script src="assets/js/jquery.js" type=" text/javaScript"></script>
 </body>
 

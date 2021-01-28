@@ -1,77 +1,9 @@
 window.onload = function() {
-    var list = document.getElementById("meni")
-    var sub = ["About game", "Tournemnts", "About me", "Login"]
-    var list1 = ["index.html", "tournaments.html", "about.html", "login.html"]
-    for (var i = 0; i < sub.length; i++) {
-        x = sub[i]
-        var y = document.createElement("li")
-        var z = document.createElement("a")
-        y.appendChild(z)
-        z.setAttribute("href", `${list1[i]}`)
-        z.innerHTML = x
-        list.appendChild(y)
-    }
-    var bzzz = document.createElement("li")
-    bzzz.setAttribute("id", "hamburger")
-    var kjk = document.createElement("i")
-    kjk.setAttribute("class", "fa fa-bars")
-    bzzz.appendChild(kjk)
-    list.appendChild(bzzz)
-    var list22 = this.document.querySelector('#hamburgerLista ul')
-    for (var i = 0; i < sub.length; i++) {
-        x = sub[i]
-        var y = document.createElement("li")
-        var z = document.createElement("a")
-        y.appendChild(z)
-        z.setAttribute("href", `${list1[i]}`)
-        z.innerHTML = x
-        list22.appendChild(y)
-    }
-    //Ispis navigaccije
-    var list2 = document.getElementById("navigacija")
-    var sub2 = ["About game", "Tournemnts", "About me", "Login", "Dokumentacija"]
-    var lista2 = ["index.html", "tournaments.html", "about.html", "login.html", "Dokumentacija.pdf"]
-    for (var i = 0; i < sub2.length; i++) {
-        x = sub2[i]
-        var y = document.createElement("li")
-        var z = document.createElement("a")
-        y.appendChild(z)
-        z.innerHTML = x
-        z.setAttribute("href", `${lista2[i]}`)
-        list2.appendChild(y)
-    }
+   
+    
     document.querySelector("#signupButton").addEventListener("click", provera);
-    document.querySelector("#singinButton").addEventListener("click", provera2)
-    $("#meni li a").hover(rast, smanjenje)
-    $("#hamburger").click(function() {
-            let vidljiv = $("#hamburgerLista").is(":visible");
-            if (vidljiv) {
-                $("#hamburgerLista").css("display", "none")
-            } else {
-                $("#hamburgerLista").css("display", "block")
-            }
-        }
-
-    )
-}
-
-function rast() {
-
-    $(this).animate({
-        fontSize: "+=7px",
-        paddingLeft: '+=15px'
-    }, 200);
-
-    $(this).stop(true, true);
-}
-
-function smanjenje() {
-    $(this).animate({
-        fontSize: "-=7px",
-        paddingLeft: '-=15px'
-    }, 200)
-
-    $(this).stop(true, true)
+    document.querySelector("#singinButton").addEventListener("click", provera2);
+  
 }
 
 //provera sign up-a
@@ -85,15 +17,15 @@ function provera() {
     let pol = document.getElementsByName("gender");
     let username = document.querySelector('#userUserName');
     console.log(username.value);
-    let password = document.querySelector("#sifra")
+    let password = document.querySelector("#sifra");
     console.log(password.value);
-    let checkImePrezime = /^[A-Z][a-z]{1,14}/
-    let checkEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
-    let checkUsername = /[A-Z][a-z][0-9]{1,14}$/
-    let checkPass = /[A-Z][a-z][0-9]{1,14}$/
+    let checkImePrezime = /^[A-Z][a-z]{2,30}/;
+    let checkEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    let checkUsername = /^[A-Za-z][A-Za-z0-9]{2,30}/;
+    let checkPass = /^([A-Z])+([A-Za-z0-9]{7,30})$/;
+
 
     if (!checkImePrezime.test(ime.value)) {
-        console.log(ime.value)
         document.querySelector('.greskaIme').classList.remove("hide");
         document.querySelector('.greskaIme').innerHTML = 'Name is not in correct form. Example : "Aleksandar"'
     } else {
@@ -103,19 +35,23 @@ function provera() {
     }
     if (!checkImePrezime.test(prezime.value)) {
         document.querySelector('.greskaPrezime').classList.remove("hide");
-        document.querySelector('.greskaPrezime').innerHTML = 'Surname is not in correct form. Example : "Aleksic"'
+        document.querySelector('.greskaPrezime').innerHTML = 'Surname is not in correct form. Example : "Aleksic"';
     } else {
         document.querySelector('.greskaPrezime').classList.add("hide");
-        document.querySelector('.greskaPrezime').innerHTML = ''
+        document.querySelector('.greskaPrezime').innerHTML = '';
         Podaci.push(prezime.value)
     }
     if (!checkUsername.test(username.value)) {
+        
         document.querySelector('.greskaUsername').classList.remove("hide");
-        document.querySelector('.greskaUsername').innerHTML = 'Username is not correct!'
+        document.querySelector('.greskaUsername').innerHTML = 'Username is not correct,you can use capital letters,small leters and number only and must have atleast 3 characters';
     } else {
+        
+
         document.querySelector('.greskaUsername').classList.add("hide");
-        document.querySelector('.greskaUsername ').innerHTML = ''
-        Podaci.push(username.value)
+        document.querySelector('.greskaUsername ').innerHTML = '';
+        Podaci.push(username.value);
+        
     }
     if (!checkEmail.test(email.value)) {
         document.querySelector('.greskaEmail').classList.remove("hide");
@@ -127,10 +63,10 @@ function provera() {
     }
     if (!checkPass.test(password.value)) {
         document.querySelector(".greskaPass").classList.remove("hide");
-        document.querySelector(".greskaPass").innerHTML = "Password is not correct in correct form."
+        document.querySelector(".greskaPass").innerHTML = "Password is not correct in correct form.Pasword must have first capital letters, small letters and numbers. Must have atleast 8 characters"
     } else {
         document.querySelector(".greskaPass").classList.add("hide");
-        document.querySelector("#sifra1").innerHTML = ""
+        document.querySelector(".greskaPass").innerHTML = " ";
         Podaci.push(password.value)
     }
 
@@ -150,34 +86,52 @@ function provera() {
         document.querySelector("#polGreska").innerHTML = "";
         Podaci.push(odabraniPol);
     }
+    if(checkImePrezime.test(ime.value) && checkImePrezime.test(prezime.value) && checkUsername.test(username.value)&&checkEmail.test(email.value)&&checkPass.test(password.value)&&(odabraniPol!="")) {
+        alert("Sign up succeed");
+        ime.value="";
+        prezime.value="";
+        email.value="";
+        password.value="";
+        username.value="";
+        for(let i=0;i<pol.length;i++){
+            if(pol[i].checked) pol[i].checked=false;
+        }
 }
-//provera about
-
-
+}
 
 //provera sign in-a
 function provera2() {
 
     let podaci = [];
-    let ime = document.querySelector("#userUserName");
-    let password = document.getElementsByName("userPassLogin")
-    let checkIme = /^[A-Z][a-z][0-9]{1,14}$/
-    let checkPass = /^[A-Z][a-z][0-9]{1,14}$/
+    let ime = document.querySelector("#userUserName1");
+    console.log(ime.value);
+    let password = document.querySelector(".userPassLogin")
+    console.log(password.value);
+    let checkIme =  /[A-Za-z][A-Za-z0-9]{2,30}/;
+    let checkPass = /^[A-Za-z0-9]{8,30}/;
     if (!checkIme.test(ime.value)) {
         document.querySelector(".greskaUsernameSingIn").classList.remove("hide");
-        document.querySelector(".greskaUsernameSingIn").innerHTML = "Username is not correct"
-    } else {
+        document.querySelector(".greskaUsernameSingIn").innerHTML = "Username is not correct.";
+    }
+     else {
         document.querySelector(".greskaUsernameSingIn").classList.add("hide");
-        document.querySelector(".greskaUsernameSingIn").innerHTML = ""
-        podaci.push(ime.value)
+        document.querySelector(".greskaUsernameSingIn").innerHTML = "";
+        podaci.push(ime.value);
     }
     if (!checkPass.test(password.value)) {
         document.querySelector(".greskaPassSignIn").classList.remove("hide");
-        document.querySelector(".greskaPassSignIn").innerHTML = "Password is not correct"
-    } else {
+        document.querySelector(".greskaPassSignIn").innerHTML = "Password is not correct";
+    } 
+    else {
         document.querySelector(".greskaPassSignIn").classList.add("hide");
-        document.querySelector(".greskaPassSignIn").innerHTML = ""
-        podaci.push(password.value)
+        document.querySelector(".greskaPassSignIn").innerHTML = "";
+        podaci.push(password.value);
     }
+
+     if(checkIme.test(ime.value) && checkPass.test(password.value)){
+       alert("Log in succeed");
+        ime.value="";
+        password.value="";
+   }
 
 }

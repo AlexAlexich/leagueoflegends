@@ -3,7 +3,7 @@
 <loc>
 https://alexalexich.github.io/leagueoflegends/index.html
 </loc>
-<lastmod>2019-02-12</lastmod>
+<lastmod>2021-01-28</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
@@ -11,7 +11,7 @@ https://alexalexich.github.io/leagueoflegends/index.html
 <loc>
 https://alexalexich.github.io/leagueoflegends/tournament.html
 </loc>
-<lastmod>2019-02-12</lastmod>
+<lastmod>2021-01-28</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
@@ -19,15 +19,15 @@ https://alexalexich.github.io/leagueoflegends/tournament.html
 <loc>
 https://alexalexich.github.io/leagueoflegends/about.html
 </loc>
-<lastmod>2019-02-12</lastmod>
+<lastmod>2021-01-28</lastmod>
 <changefreq>yearly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>
 https://alexalexich.github.io/leagueoflegends/login.html</loc>
-<lastmod>2019-02-12</lastmod>
-<changefreq>yearlz</changefreq>
+<lastmod>2019-01-28</lastmod>
+<changefreq>yearly</changefreq>
 <priority>0.1</priority>
 </url>
 </urlset>

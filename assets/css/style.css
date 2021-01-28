@@ -14,6 +14,9 @@
     width: 100%;
     height: 150px;
     background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .okvir {
@@ -60,6 +63,7 @@ header #slika img {
 
 #slider {
     width: 100%;
+    margin-top: 150px;
 }
 
 #slider img {
@@ -85,12 +89,12 @@ header #slika img {
 #polGreska,
 .greskaPassSignIn,
 .greskaUsernameSingIn {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 form label {
     font-size: 30px;
-    color: black;
+    color: rgb(136, 132, 132);
 }
 
 .form {
@@ -126,9 +130,13 @@ form label {
 #registracija {
     width: 40%;
     float: left;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    z-index: 22;
 }
 
 #login {
+    margin-top: 4%;
     width: 40%;
     float: right;
 }
@@ -204,7 +212,9 @@ footer p {
     margin: 0 auto;
     font-size: 30px;
 }
-
+#aboutMid{
+    margin-top: 4%;
+}
 #textAbout {
     text-align: center;
 }
@@ -220,14 +230,21 @@ footer p {
     padding-top: 15px;
 }
 
-.background {
+/*.background {
     background-image: url("../images/bg.jpg");
 }
 
 .turnirPrvi {
     background-image: url("../images/bg.jpg");
 }
-
+*/
+.background{
+    color: rgb(136, 132, 132);;
+    margin-top:150px;
+}
+.turnirPrvi{
+    color: rgb(136, 132, 132);
+}
 #slikaPrva,
 #slikaDruga,
 #slikaTreca,
@@ -243,7 +260,7 @@ footer p {
 }
 
 .turnirDrugi {
-    background-color: black;
+    background-color: #3f0349 ;
     color: rgb(245, 238, 238);
 }
 
@@ -266,14 +283,12 @@ footer p {
 }
 
 #slikaPrva,
-#slikaTreca,
-.videoLevo {
+#slikaTreca {
     float: left;
 }
 
 #slikaDruga,
-#slika4,
-.videoDesno {
+#slika4 {
     float: right;
 }
 
@@ -357,13 +372,6 @@ footer p {
 #naslovVideo {
     margin-top: 15px;
 }
-
-.videoDesno,
-.videoLevo {
-    width: 60%;
-    margin-bottom: 50px;
-}
-
 #naslov {
     width: 100%;
     text-align: center;
@@ -384,9 +392,12 @@ footer p {
 }
 
 #hamburgerLista {
-    background-color: black;
+    background-color: black ;
     text-align: center;
     display: none;
+    position: absolute;
+    top:30px;
+    left:35%;
 }
 
 #hamburgerLista #hamburgerMeni li a {
